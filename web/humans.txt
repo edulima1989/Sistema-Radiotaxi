@@ -3,7 +3,7 @@
 /* TEAM */
 	Creator: Eduardo Lima
 	Contact: eduarditolima [at] gmail.com
-	Twitter: @edulimsistemas
+	Twitter: @edulima1989
 	From: Loja city, Ecuador
 	
 /* THANKS */
