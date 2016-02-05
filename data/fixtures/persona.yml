@@ -1,0 +1,35 @@
+#Persona:
+#  pc1:
+#    cedula: 1102703046
+#    first_name: Kirly Paola
+#    last_name: Apellido Apellido
+#    sexo: F
+#    direccion: Las peñas
+#    telefono: 2574578
+#    telefonoMovil: 086542781
+##    
+##  po1:
+##    cedula: 1102703045
+##    nombre: Daniela Arlyn
+##    apellido: Apellido Apellido
+##    sexo: F
+##    telefono: 2572348
+##    celular: 098334567
+##    
+#  pp1:
+#    cedula: 1112333045
+#    first_name: Taylor Adrian
+#    last_name: Apellido Apellido
+#    sexo: M
+#    direccion: Clodoveo
+#    telefono: 2534796
+#    telefonoMovil: 092764389
+##    
+##    
+##  personachofer1:
+##    cedula: 1276543278
+##    nombre: Nelson Margarito
+##    apellido: Apellido Apellido
+##    sexo: M
+##    telefono: 2387653
+##    celular: 093676539

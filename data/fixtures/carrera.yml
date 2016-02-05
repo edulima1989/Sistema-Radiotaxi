@@ -1,0 +1,9 @@
+#Carrera:
+#  carrera1:
+#    sfGuardUser: User_admin
+#    Codigo: codigo1
+#    Vehiculo: vehiculo1
+#    fecha: '2012-03-12'
+#    hora: '20-34'
+#    estado: espera
+#    tiempo: 5 

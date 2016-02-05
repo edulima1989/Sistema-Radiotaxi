@@ -1,0 +1,259 @@
+/* 
+    Document   : simulacion.css
+    Created on : 29/04/2013, 07:51:36 AM
+    Author     : EDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#simulacion{
+    width: 100%;
+}
+/*,#manejador*/
+#mapa
+{
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#mapa{
+    color: #595350;
+    font-size: 12pt;
+    width:100%; height:550px;
+    margin-right: auto;
+    border-style:double;
+
+}
+/*#manejador{
+    width: 22.5%;
+}*/
+
+#opciones,#notificaciones{
+    background: #cccccc;
+    padding: 5px;
+    margin-left: auto;
+    border-radius: 0px 10px 10px 10px;
+    height: 100%;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+}
+#opciones{
+    margin-top: 0;
+}
+#notificaciones{
+    margin-top: 5px;
+    overflow: auto;
+    height: 260px;
+}
+div.notificacion,div.notif-carrera,div.notif-solicitud{
+    width: 160px;
+    margin: 5px;
+    font-size: .6em;    
+    display: inline-block;
+    vertical-align: top;
+    background: #373737;
+    color: #fff;
+    padding: 5px;
+    line-height: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+div.notif-carrera h2,div.notif-solicitud h2{
+    font-size: 1.5em;
+    line-height: 15px;
+    color: green;
+}
+div.notif-solicitud h2{
+    color: orange;
+}
+.taxi, .taxi-seleccionado{ 
+    border-style: outset;
+    border-color: gainsboro;
+    text-decoration: none;
+    border-radius: 25px;  
+    margin: 2px 2px;
+    background: #ffcc00; 
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:.85em; 
+    font-weight:bold;  
+    width:35px; height:25px;}/*fin botones Editar Actividad*/
+
+.taxi:hover  { background: #000; color: #fff;}
+.taxi-seleccionado{
+    background: #ff9933;
+}
+/*#linkenviar,#botonenviar,*/
+.boton-opciones{ 
+    border-style: outset;
+    border-color: gainsboro;
+    text-decoration: none;
+    padding: 6.5px 12px;
+    border-radius: 25px; 
+    background: #ffcc00; 
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:.8em; 
+    font-weight:bold;  
+    width:150px; 
+    height:100px;
+    /*text-align: end;*/
+    text-indent:-9999px; cursor:pointer;}/*fin botones Editar Actividad*/
+/*#linkenviar:hover,#botonenviar:hover,*/
+.boton-opciones:hover  { background: #000; color: #fff;}
+
+.panel-opciones-botones{
+    padding: 6.5px 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1em;
+}
+#btn-manejo-unidades{
+    background:transparent url(../../images/simulacion/ubicar-unidad.png) repeat-x scroll left top;
+}
+#btn-asignar-unidad{
+    background:#ffffcc url(../../images/simulacion/asignar-unidad.png) repeat-x scroll left top;
+}
+#btn-ingresar-carrera{
+    background:#ffffcc url(../../images/simulacion/ingreso-carrera.png) repeat-x scroll left top;
+}
+#btn-ingresar-carrera-codigo{
+    background:#ffffcc url(../../images/simulacion/ingreso-carrera-codigo.png) repeat-x scroll left top;
+}
+.btn-mensaje-solicitud,.btn-mensaje-carrera-encurso{ 
+    border-style: outset;
+    border-color: gainsboro;
+    text-decoration: none;
+    margin-top:   3px;
+    margin-left: 5px;
+    border-radius: 25px; 
+    background: #db8229; 
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px; 
+    font-weight:bold;  
+    width:70px; 
+    height:20px;}/*fin botones Editar Actividad*/
+.btn-mensaje-solicitud:hover  { background: #000; color: #db8229;}
+.btn-mensaje-carrera-encurso{ background: #33ff00;}
+.btn-mensaje-carrera-encurso:hover{background: #000;color: #33ff00;}
+div#panel-taxis, div#panel-taxis-cercanos{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.reveal-modal {
+    margin-left: -200px;
+}
+.info-map{    
+    font-size:.6em;
+    line-height: 15px;
+}
+
+
+
+/*-- Comienzo menu flotante --*/
+#menuflotante {
+    /*    float:left;*/
+    width: 100%;
+    padding: 3px;
+    background:transparent url(../../images/simulacion/menu-opciones-bg.jpg) repeat-x scroll left top;
+    position:fixed;
+    bottom:0px;
+    height:23px;
+    margin: 0 auto;
+    text-align: center;
+}
+.divflotante{
+    /*    float:left;*/
+    width: 100%;
+    padding: 3px;
+    background: #cccccc;
+    /*    position:fixed;*/
+    bottom:0px;
+    height:100%;
+    overflow: auto;    margin-left: auto;
+}
+#menuflotante li {
+    float:left;
+    display:block;
+    background:url(../../images/simulacion/menu-opciones.jpg) no-repeat right 8px;
+    padding:2px 20px 0;
+}
+
+#menuflotante ul {
+    margin:0;
+    padding:0;
+    line-height:normal;
+    list-style:none;
+}
+
+#menuflotante a:hover {
+    padding-top: 2px;
+    color: #009999;
+    cursor: pointer;
+}    
+
+#menuflotante a {
+    display:block;
+    float:left;
+    text-decoration:none;
+    font:12px Arial;
+    color:#FFFFFF;
+}
+
+#menuflotante .current_page_item {
+    margin:0;
+    color:#FFFFFF;
+}
+
+
+/*-- Fin menu flotante --*/
+
+span.bubble
+{
+    background: #e02424;  		
+    position: relative;
+    left: 5px;
+    top: -10px;
+    padding: 2px 6px;
+    color: #fff;
+    font: bold .9em Tahoma, Arial, Helvetica;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.animating{
+    -webkit-animation: animate 1s cubic-bezier(0,1,1,0);
+    -moz-animation: animate 1s cubic-bezier(0,1,1,0);
+    -ms-animation: animate 1s cubic-bezier(0,1,1,0);
+    -o-animation: animate 1s cubic-bezier(0,1,1,0);
+    animation: animate 1s cubic-bezier(0,1,1,0);		
+}
+button {border:0;}
+.btn-taxi span,.btn-taxi-seleccionado span, .boton-opciones span{
+    position: relative;
+    right: 10px;
+    bottom: -20px;
+}
+.btn-taxi,.btn-taxi-seleccionado { 
+    background:transparent url(../../images/simulacion/taxi.png) no-repeat 0 0;width: 50px;height: 55px;
+    border-style: outset;
+    border-radius: 10px;  
+    margin: 5px;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:.85em; 
+    font-weight:bold;  
+    text-align: end;
+    text-indent:-9999px; cursor:pointer;
+}
+.btn-taxi-seleccionado{ 
+    background:#ff9933 url(../../images/simulacion/taxi.png) no-repeat 0 0;width: 50px;height: 55px;    
+}
+.btn-taxi:hover {
+    background-position:0 -5px;
+    background-color: black;
+    color: #FFF;}

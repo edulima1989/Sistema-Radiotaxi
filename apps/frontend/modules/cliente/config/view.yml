@@ -1,0 +1,9 @@
+default:
+  stylesheets:    [main.css]
+
+indexSuccess:
+  stylesheets: [tablas.css]
+  javascripts:  [jquery.min.js,opc.busqueda.cliente.js]  
+  
+showSuccess:
+  stylesheets: [tablas3.css]

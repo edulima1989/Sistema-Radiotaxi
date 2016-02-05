@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Propietario
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          propietario
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+        
+      list:    
+        title: Administración de Propietarios
+        fields:
+          cedula: { label: Cédula }
+          last_name: { label: Apellido }
+          telefono: { label: Teléfono }
+          first_name: { label: Nombre }
+        display: [=cedula, last_name, first_name, telefono ]
+        max_per_page: 10
+        batch_actions: {}
+        object_actions:
+          _edit: { label: Editar }
+#          _delete: { label: Eliminar }
+      filter:
+        display: [cedula , last_name ]
+        fields:        
+          cedula: { label: "Cédula:" }
+          last_name: { label: "Apellido:" }
+        
+      form:    ~
+      edit:    
+        title: Editar Propietario "%%last_name%% %%first_name%%"
+      new:     
+        title: Crear Propietario

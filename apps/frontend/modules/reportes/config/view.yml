@@ -1,0 +1,43 @@
+## YAML Template.
+default:
+  stylesheets:    [main.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+
+indexSuccess:
+  stylesheets: []
+
+errorSuccess:
+  layout: mostrardatos   
+  
+newSuccess:
+  stylesheets: []
+  javascripts: []
+  
+editSuccess:
+  stylesheets: []
+  javascripts: []
+  
+porunidadSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css]
+  javascripts: [jquery-1.7.2.min.js, jquery-ui.min.js,calendario.js]
+  
+porcodigoSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css, jquery.ui.autocomplete.css, jquery.ui.menu.css]
+  javascripts: [jquery-1.7.2.min.js, jquery-ui.min.js, calendario.js, jquery.ui.core.js, jquery.ui.widget.js, jquery.ui.position.js, jquery.ui.menu.js, jquery.ui.autocomplete.js, reportePorUnidad.js]
+
+poroperadorSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css]
+  javascripts: [jquery-1.7.2.min.js, jquery-ui.min.js, calendario.js]
+  
+informe_GeneralSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css]
+  javascripts: [jquery-1.7.2.min.js, jquery-ui.min.js, calendario.js]
+
+calidad_ServicioSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css]
+  javascripts: [jquery-1.7.2.min.js, jquery-ui.min.js, calendario.js]

@@ -1,0 +1,58 @@
+/*
+Reset CSS
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+html{color:#000000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table,tr,td{border-collapse:collapse;border-spacing:auto;table-layout: auto;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}
+/*
+Fonts CSS
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;outline: none;}
+table{font-size:larger;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;font-size:108%;line-height:100%;}
+a{ color: #ffffff; outline: none;}
+body{font:14px "Arial", Lucida Grande, Verdana, sans-serif; background-color: white ; text-align: center; }
+#enlace a{ color:#000000;}
+#container{ width: 960px; height: 100%; margin: 0px auto; background: #fff url(../images/bg-page.png) bottom repeat-x; } 
+#headeradmin{ background: url(../images/radiotaxi-bg.jpg) repeat-x top; margin:0px 0px 0px 0px; height: 230px;}
+
+#content h1{ width: 80%; height: 40px; margin-top: 10px; margin-bottom: 1px; margin-left: auto; margin-right: auto; padding: 0px 15px; font-size: 124%; text-transform: uppercase;  text-align:center;
+background-color: #328a26; line-height: 32px; -webkit-border-radius: 15px 20px;  /* Safari  */ -moz-border-radius: 15px 20px;  color: #fff;}
+
+
+#footer{ margin-top: auto; font-size: 90%; padding-top: 30px; position: static;} 
+
+.spriteserror{background-image:url(../images/Rt-error404.png);background-color:transparent;background-repeat:no-repeat;}
+.spriteserror2{background-image:url(../images/Rt-error403.png);background-color:transparent;background-repeat:no-repeat;}
+.spriteserror3{background-image:url(../images/Rt-error401.png);background-color:transparent;background-repeat:no-repeat;}
+.spriteserror4{background-image:url(../images/Rt-error500.png);background-color:transparent;background-repeat:no-repeat;}
+#error_jpg,#error2_jpg,#error3_jpg,#error4_jpg{height:407px;width:900px; margin-left: auto; margin-right: auto;}
+
+#textobutton2{ width: auto; height: 16px; float: left; position: static;}
+#atrasmall_jpg{height:16px;width:16px;background-position:center;}
+.spritesatrasmall{background-image:url(../images/atrassmall.png);background-color:transparent;background-repeat:no-repeat;}
+#imagenes{ width:16px; height: 16px; float: left; margin-left: 3px; margin-right: 3px; margin-top: 3px; position: static;}
+.buttonmedium{ margin: 0px; text-decoration: none; font: bold 3.5em 'Arial'; /*Change the em value to scale the button*/ display:inline-block; text-align: center; font-size:12px;
+width:150px; height:30px; color: #409d33; border: 1px solid #9c9c9c; /* Fallback style */ border: 1px solid rgba(0, 0, 0, 0.3); text-shadow: 0 1px 0 rgba(0,0,0,0.4); box-shadow: 0 0 .05em rgba(0,0,0,0.4); -webkit-border-radius: 1px 1px; -moz-border-radius: 1px 1px;}
+.button-green:hover{ background: #409d33; color: #ffffff;}
+.button-green:active{ background: #328a26;}
+#titulos{ width: 100%; height: 40px; text-align: center; }
+#headeradmin{ background: url(../images/radiotaxi-bg.jpg) repeat-x top; margin:0px 0px 0px 0px; height: 230px;}
+#cajaprincipalproyecto{ width: auto; height: auto;  /*       float: none;*/ margin-left: 0px; margin-right: 0px;
+position:relative; text-align: center;}
+
+#cajaredirecciones{  width: 60%; height: 100%; margin-left: auto; margin-right: auto; background-color: #fff; border-style: solid; border-color:#000000; }
+
+.spritesmozilla{background-image:url(../images/mozilla.png);background-color:transparent;background-repeat:no-repeat;}
+#mozilla_jpg{height:32px;width:32px;background-position:center;margin-left:35px;}
+.spriteschrome{background-image:url(../images/chrome.png);background-color:transparent;background-repeat:no-repeat;}
+#chrome_jpg{height:32px;width:32px;background-position:center;margin-left:35px;}
+.spritesnavegador{background-image:url(../images/navegadores.png); background-color:transparent;background-repeat:no-repeat;}
+#navegadores_jpg{height: 320px; width: 424px; background-position:center;}

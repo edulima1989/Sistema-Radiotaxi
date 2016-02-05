@@ -1,0 +1,63 @@
+#sfGuardUser:
+#  User_admin:
+##    cedula:         1111111111
+#    first_name:     Benjamín  
+#    last_name:      Carrión
+#    sexo:           M
+#    email_address:  coop.benjamin.carrion@gmail.com 
+#    username:       admin
+#    password:       benjamin1234
+#    is_super_admin: true
+#    Groups:         [Group_admin]
+    
+#  User_operador:
+##    cedula:         2222222222
+#    first_name:     Carla
+#    last_name:      Ludeña
+#    sexo:           F
+#    email_address:  carla.lude@gmail.com
+#    username:       operador
+#    password:       operador
+#    is_super_admin: false
+#    Groups:         [Group_operador]
+    
+#  User_cliente:
+##    cedula:         3333333333
+#    first_name:     Cliente
+#    last_name:      Apellido
+#    sexo:           M
+#    email_address:  eduarditolima@gmail.com
+#    username:       cliente
+#    password:       cliente
+#    telefono:       2567387
+#    is_super_admin: false
+#    Groups:         [Group_cliente]
+
+sfGuardGroup:
+  Group_admin:
+    name:           administrador
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+    
+  Group_operador:
+    name:           operador
+    description:    Gestion de carreras
+    Permissions:    [Permission_operador]
+    
+  Group_cliente:
+    name:           cliente
+    description:    Solicitud de carreras
+    Permissions:    [Permission_cliente]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           administracion
+    description:    Administrator permission
+    
+  Permission_operador:
+    name:           operador
+    description:    Administrador de carreras
+    
+  Permission_cliente:
+    name:           cliente
+    description:    Solicitud de carreras

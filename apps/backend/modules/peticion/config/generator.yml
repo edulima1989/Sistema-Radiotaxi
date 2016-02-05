@@ -1,0 +1,40 @@
+generator:  
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Peticion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          peticion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~              
+      fields:  ~
+      list:
+        title: Administración de Solicitudes de Usuario
+        fields:
+          last_name: { label: Apellido }
+          telefono: { label: Teléfono }
+          first_name: { label: Nombre }
+        display: [=last_name, first_name, telefono]
+        max_per_page: 10
+        batch_actions: {}
+        object_actions:                   
+          _edit:
+            { label: Aprobar}
+          _delete:
+            { label: Rechazar}
+      filter:          
+        display: [telefono, last_name]
+        fields:  
+          last_name: { label: "Apellido:" }
+          telefono: { label: "Teléfono:" }      
+      form:    ~
+      edit:   
+        title: Solicitud de Usuario
+      new:     
+        title: Nueva Solicitud

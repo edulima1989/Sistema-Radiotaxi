@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Codigo
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          codigo
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~       
+      list:    
+        title: Administración de Codigos
+        fields:
+          numero: {label: N° de Código}
+        display: [=numero, cliente, barrio]
+        max_per_page: 10
+        batch_actions: {}
+        object_actions:
+          _edit: { label: Editar }
+#          _delete: { label: Eliminar }
+      filter:  
+        display: [id_cliente, id_user, numero]
+        fields:  
+          id_user: { label: "Cliente Web:"}
+          id_cliente: { label: "Cliente Telefonico:"}
+          numero: {label: "N° de Código:"}
+      form:    ~
+      edit:    
+        title: Editar Codigo   (%%numero%%)        
+      new:     
+        title: Crear Codigo
+          

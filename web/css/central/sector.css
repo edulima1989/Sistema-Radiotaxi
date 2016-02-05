@@ -1,0 +1,23 @@
+/* 
+    Document   : sector
+    Created on : 22/05/2013, 06:20:54 PM
+    Author     : EDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*#mapa{
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+}*/
+
+#mapa{
+    color: #595350;
+    font-size: 12pt;
+    width:100%; height:400px;
+    margin-right: auto;
+    border-style:double;
+
+}
+

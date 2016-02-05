@@ -1,0 +1,18 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Sistema de Ratio-taxi en linea
+    description:  Bienvenido a mi sistema de radio-taxi
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [movil/graphite.css,movil/estilos.css]
+  
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,14 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+ url_pagina: http://radiotaxi.com
+ correo_admin: coop.benjamin.carrion@gmail.com
+ nombre_admin: Radio-Taxi Benjamín Carrión
+ 
+ rbd_name: radiotaxi
+ rbd_host: localhost
+ rbd_user: root
+ rbd_password: edulima1989
+ 

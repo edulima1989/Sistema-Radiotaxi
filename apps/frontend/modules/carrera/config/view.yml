@@ -1,0 +1,25 @@
+## YAML Template.
+default:
+  stylesheets:    [main.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+
+indexSuccess:
+  stylesheets: [tablas3.css, jquery-ui-1.7.2.custom.css]
+  javascripts:    [jquery-1.7.2.min.js, jquery-ui.min.js,calendario.js]
+ 
+gestionSuccess:
+  stylesheets: [carreras.css, gestion.css]
+  javascripts: [jquery.min.js, gestionCarrera.js]
+  
+simulacionSuccess:
+  stylesheets: [jquery.toastmessage.css,reveal.css,chosen.css,tabs.css, central/simulacion.css]
+  javascripts: [https://maps.google.com/maps/api/js?sensor=true ,gmaps.js,jquery-1.7.2.min.js,jquery.reveal.js,jquery.toastmessage.js, jquery-moveme.js, simulacion.js, chosen.jquery.min.js,modernizr.custom.04022.js] 
+  
+sectorSuccess:
+  stylesheets: [central/sector.css]
+  javascripts: [https://maps.google.com/maps/api/js?sensor=true , sector.js,jquery-1.7.2.min.js]

@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  stylesheets:    [error.css]
+  javascripts:    [jquery.min.js,jas.js,jquery.reveal.js,tabs.js,mostrartemasayuda.js]
+
+  has_layout:     true
+  layout:         layout3
+  
+#indexSuccess:
+#  stylesheets:    [reveal.css,error.css,main2.css]
+#
+#  javascripts:    [jquery.min.js,jas.js,jquery.reveal.js,mostrartemasayuda.js]
+#
+#  has_layout:     true
+#  layout:         layout3
+# 
+#error500:
+#  stylesheets:    [reveal.css,error.css,main2.css]
+#
+#  javascripts:    [jquery.min.js,jas.js,jquery.reveal.js,mostrartemasayuda.js]
+#
+#  has_layout:     true
+#  layout:         layout3
+ 

@@ -1,0 +1,212 @@
+connection: doctrine
+options: 
+  type: INNODB
+  collate: utf8_unicode_ci
+  charset: utf8
+
+Persona:
+  tableName: persona 
+  columns:
+    first_name: {type: string(50), notnull: true}
+    last_name: {type: string(50), notnull: true}
+    sexo: {type: string(1),notnull: true, default: "M"}
+    direccion: {type: string(100)}      
+    telefono: {type: string(10), notnull: true}
+    telefonoMovil: {type: string(10)}
+
+Cliente:
+  tableName: cliente
+  inheritance:
+    type: concrete
+    extends: persona   
+  columns:
+
+Peticion:
+  tableName: peticion
+  inheritance:
+    type: concrete
+    extends: sfGuardUser
+  columns:
+    
+Propietario:
+  tableName: propietario
+  inheritance:
+    type: concrete
+    extends: persona
+  columns:
+    cedula: {type: string(10), unique: true, notnull: true}
+    licencia: {type: string (20)}
+
+
+Vehiculo:
+  tableName: vehiculo  
+  columns:
+    id_propietario: {type: integer(10), notnull: true}
+    id_sector: {type: integer(10)}
+    numero: {type: string(10), notnull: true, unique: true}
+    placa: {type: string(7), notnull: true, unique: true}
+    marca: {type: string(20), notnull: true}
+    modelo: {type: string(20), notnull: true}
+    ano: {type: string(10), notnull: true}      
+  relations:
+    Propietario:
+      local: id_propietario
+      foreign: id
+      type: one
+      foreignType: many
+    Sector:
+      local: id_sector
+      foreign: id
+      type: one
+      foreignType: many
+
+Codigo:
+  tableName: codigo   
+  columns:
+    id_user: {type: integer(10)}
+    id_cliente: {type: integer(10)}
+    numero: {type: string(5), notnull: true, unique: true}
+    barrio: {type: integer(10), notnull: true}
+    calle1: {type: string(50), notnull: true}
+    calle2: {type: string(50)}
+    numCasa: {type: string(8)}
+    observacion: {type: clob, notnull: true}
+    latitud: {type: string(50), notnull: true }
+    longitud: {type: string(50), notnull: true }
+  relations:
+    Cliente:
+      local: id_cliente
+      foreign: id
+      type: one 
+      foreignType: many
+    sfGuardUser:
+      local: id_user
+      foreign: id
+      type: one
+      foreignType: many
+    Sector:
+      local: barrio
+      foreign: id
+      type: one
+      foreignType: many
+
+Carrera:
+  tableName: carrera    
+  columns:
+    id_operador: {type: integer(10), notnull: true}
+    id_codigo: {type: integer(10)}
+    id_vehiculo: {type: integer(10), notnull: true}
+    id_sincodigo: {type: integer(10)}
+    tiempo: {type: integer(2), notnull: true }
+    detalle: {type: clob}
+    fecha: {type: date, notnull: true}
+    hora: {type: time, notnull: true}
+    estado: {type: enum, values:['cancelada','completada','espera','solicitada']}
+    tiempo_atencion: {type: integer(2)}
+    destino: {type: integer(10)}
+    horaat: {type: time}
+    tiempo_aprox_dest: {type: integer(3)}
+    hora_dest: {type: time}
+    calidad: {type: integer(2)}
+  relations:
+    sfGuardUser:
+      local: id_operador
+      foreign: id
+      type: one
+      foreignType: many     
+    Codigo:
+      local: id_codigo
+      foreign: id
+      type: one
+      foreignType: many 
+    Vehiculo:
+      local: id_vehiculo
+      foreign: id
+      type: one
+      foreignType: many
+    Sin_Codigo:
+      local: id_sincodigo
+      foreign: id
+      type: one
+      foreignType: many
+    Sector:
+      local: destino
+      foreign: id
+      type: one
+      foreignType: many
+  
+Sin_Codigo:
+  tableName: sin_codigo
+  columns:  
+    cliente: {type: string(50), notnull: true}
+    telefono: {type: string(10), notnull: true}
+    barrio: {type: integer(10)}
+    calle1: {type: string(50), notnull: true}
+    calle2: {type: string(50)}
+    numCasa: {type: string(8)}
+    observacion: {type: clob}
+  relations:
+    Sector:
+      local: barrio
+      foreign: id
+      type: one
+      foreignType: many
+      
+Solicitud_Carrera:
+  actAs: [Timestampable]
+  tableName: solicitud_carrera
+  columns:
+    id_codigo: {type: integer(10), notnull: true}
+    id_cliente: {type: integer(10), notnull: true}
+    estado: {type: enum, values:['solicitada','aprovada','negada','cancelada'], default: "nueva"}
+    tiempo: {type: integer(2), notnull: true}
+    detalle: {type: clob}
+    fecha: {type: date, notnull: true}
+    hora: {type: time, notnull: true}
+    notificacion: {type: string (2)}
+  relations:
+    Codigo:
+      local: id_codigo
+      foreign: id
+      type: one
+      foreignType: many      
+    sfGuardUser:
+      local: id_cliente
+      foreign: id
+      type: one
+      foreignType: many     
+      
+Peticion_Codigo:  
+  tableName: peticion_codigo
+  inheritance:
+    type: concrete
+    extends: Codigo
+  columns:
+  
+Sector:
+  tableName: sector
+  columns:
+    nombre: {type: string(50) , notnull: true}
+    latitud: {type: string(50) , notnull: true}
+    longitud: {type: string(50) , notnull: true}
+    
+Reservacion:
+  tableName: reservacion
+  columns:
+    id_codigo: {type: integer(10), notnull: true}
+    lunes: {type: boolean, default: true }
+    martes: {type: boolean, default: true}
+    miercoles: {type: boolean, default: true}
+    jueves: {type: boolean, default: true}
+    viernes: {type: boolean, default: true}
+    sabado: {type: boolean, default: true}
+    domingo: {type: boolean, default: true}
+    horario1: {type: time, notnull: true}
+    horario2: {type: time}
+    horario3: {type: time}
+  relations:
+    Codigo:
+      local: id_codigo
+      foreign: id
+      type: one
+      foreignType: many

@@ -1,0 +1,91 @@
+codigo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Codigo
+    module:               codigo
+    prefix_path:          /codigo
+    column:               id
+    with_wildcard_routes: true
+
+peticion_codigo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Peticion_Codigo
+    module:               peticionCodigo
+    prefix_path:          /peticionCodigo
+    column:               id
+    with_wildcard_routes: true
+
+peticion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Peticion
+    module:               peticion
+    prefix_path:          /peticion
+    column:               id
+    with_wildcard_routes: true
+
+persona:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Persona
+    module:               GestionCuentaCliente
+    prefix_path:          /GestionCuentaCliente
+    column:               id
+    with_wildcard_routes: true
+
+vehiculo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Vehiculo
+    module:               Vehiculo
+    prefix_path:          /Vehiculo
+    column:               id
+    with_wildcard_routes: true
+
+propietario:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Propietario
+    module:               Propietario
+    prefix_path:          /Propietario
+    column:               id
+    with_wildcard_routes: true
+
+sfguarduser:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               sfGuardUser
+    prefix_path:          /sfGuardUser
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+sf_guard_signin:
+  url:   /ingresar
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /salir
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /recuperar-password
+  param: { module: sfGuardAuth, action: password }
+
+homepage:
+  url:   /
+  param: { module: inicio, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+    url:   /:module/:action/*

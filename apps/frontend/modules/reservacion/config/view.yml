@@ -1,0 +1,20 @@
+## YAML Template.
+default:
+  stylesheets:    [main.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+
+
+indexSuccess:
+  stylesheets: [tablas3.css]
+   
+newSuccess:
+  stylesheets: []
+  javascripts: [jquery.min.js,reservacion.js]
+  
+editSuccess:
+  stylesheets: []
+  javascripts: [jquery.min.js,reservacion.js]

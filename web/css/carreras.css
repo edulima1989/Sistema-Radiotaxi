@@ -1,0 +1,177 @@
+/* 
+    Document   : carreras
+    Created on : 10/07/2012, 10:19:33 AM
+    Author     : EDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+root { 
+    display: block;
+}
+.form-solicitud{
+    background: #373737;
+    margin: 0 auto;
+    padding: 2px 3px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #fff;
+}
+
+.category .feed
+{
+    margin: 4px 15px;
+    float: right;
+    line-height: 25px;
+    background-position: left center;
+}
+
+.category .feed a
+{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.carreras
+{
+    width: 90%;
+    margin: 0 auto;
+    border-right: 1px dotted #999;
+    border-left:  1px dotted #999;
+    border-bottom: 1px dotted #999;
+    border-top: 1px dotted #999;
+}
+
+.carreras tr.head
+{
+    background-color: #373737;
+    color: beige;
+    text-align: center;
+}
+
+.carreras tr.even
+{
+    background-color: #a3cefc;
+
+}
+.carreras tr.odd
+{
+    background-color: #d3dfec;
+}
+
+.carreras tr.odd:hover,
+.carreras tr.even:hover
+{
+    background-color: #fff;
+}
+.carreras td
+{
+    padding: 2px 15px;
+    font:0.8em/145% 'Trebuchet MS',helvetica,arial,verdana;
+    border-collapse: collapse;
+}
+.carreras td.company{
+    padding: 0px 5px;
+}
+
+li.x
+{
+    padding-left: 15px;
+    padding-top: 5px;
+    background: url(../images/borrarsmall.png) center left no-repeat;
+}
+
+li.c
+{
+    padding-left: 15px;
+    padding-top: 5px;
+    background: url(../images/tick_16.png) center left no-repeat;
+}
+.carreras .position,
+.carreras .company
+{
+    padding: 5px;
+    color: #524F46; 
+}
+
+.carreras .company a,
+.carreras .position a
+{
+    color: #d2813f;
+    padding: 5px 15px;
+    display: compact;
+    text-decoration: none;
+}
+.carreras .company a:hover,
+.carreras .position a:hover
+{
+    width: 30%;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+.more_carreras
+{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 85%;
+    margin: 5px 15px 15px;
+    clear: both;
+}
+
+.more_carreras a
+{
+    color: #176f94;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 130%;
+}
+
+.more_carreras a:hover
+{
+    color: #176f94;
+    text-decoration: underline;
+}
+
+.pagination_desc
+{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #828f95;
+}
+
+.pagination_desc strong
+{
+    color: #176f94;
+}
+
+.pagination
+{
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+    color: #176f94;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.pagination a
+{
+    margin: 0 1px;
+    text-decoration: none;
+    color: #828f95;
+    font-size: 75%;
+    vertical-align: 1px;
+    font-weight: normal;
+}
+
+.pagination a:hover
+{
+    text-decoration: underline;
+}
+
+.pagination img
+{
+    vertical-align: -2px;
+}

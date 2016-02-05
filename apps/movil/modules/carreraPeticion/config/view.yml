@@ -1,0 +1,6 @@
+default:
+  javascripts:    [jquery.min.js,jquery.cookie.js,jquery.hoverIntent.minified.js,jquery.dcjqaccordion.2.7.min.js]
+  
+indexSuccess:
+  stylesheets:  [tablas2.css]
+  

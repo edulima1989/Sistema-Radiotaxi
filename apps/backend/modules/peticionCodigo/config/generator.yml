@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Peticion_Codigo
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          peticion_codigo
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~ 
+      list:    
+        title: Administración de Solicitudes de Código
+        fields:
+          sfGuardUser: { label: Solicitante}
+          calle1: { label: Teléfono}
+        display: [sfGuardUser, barrio, calle1]
+        max_per_page: 10
+        batch_actions: {}
+        object_actions:                   
+          _edit:
+            { label: Aprobar}
+          _delete:
+            { label: Rechazar}
+      filter:  
+        display: [id_user]
+        fields:
+          id_user: { label: "Cliente:"}
+      form:    ~
+      edit:    
+        title: Solicitud de Código
+      new:     
+        title: Nueva Solicitud
+          

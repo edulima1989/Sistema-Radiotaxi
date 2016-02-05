@@ -1,0 +1,17 @@
+/*radiotaxi.com | Servicio de ratio-taxi en linea.  - http://radiotaxi.com */
+
+/* TEAM */
+	Creator: Eduardo Lima
+	Contact: eduarditolima [at] gmail.com
+	Twitter: @edulimsistemas
+	From: Loja city, Ecuador
+	
+/* THANKS */
+	
+	
+/* SITE */
+	Last update: 2013/02/14
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript, PHP, MYSQL, DOCTRINE, Symfony
+	Components: jQuery, Gmaps
+	Software: Netbeans 

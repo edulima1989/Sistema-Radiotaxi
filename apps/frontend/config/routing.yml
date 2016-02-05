@@ -1,0 +1,47 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: cooperativa, action: inicio }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:sfGuardAuth
+#  param: { action: signin }
+#
+#default:
+#  prefix_path: /:sf_culture
+#  is_secure: true
+#  url:   /:module/:action/*
+
+
+#sfGuardAuth
+sf_guard_signin:
+  url:   /ingreso
+  param: { module: sfGuardAuth, action: signin }
+  
+sf_guard_signout:
+  url:   /salir
+  param: { module: sfGuardAuth, action: signout }
+
+  sf_guard_password:
+  url:   /recuperar-password
+  param: { module: sfGuardAuth, action: password }
+
+  
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+default:
+  prefix_path: /:sf_culture
+  is_secure: true
+  url:   /:module/:action/*

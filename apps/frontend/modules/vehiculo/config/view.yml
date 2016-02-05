@@ -1,0 +1,7 @@
+## YAML Template.
+---
+default:
+  stylesheets:    [main.css]
+
+indexSuccess:
+  stylesheets: [tablas.css]

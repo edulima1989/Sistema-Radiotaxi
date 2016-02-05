@@ -1,0 +1,52 @@
+/* 
+    Document   : login
+    Created on : 23/07/2012, 10:42:06 PM
+    Author     : EDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ root { 
+    display: block;
+}   
+.login h1{
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+.login h2,.login h3{
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+.login {
+    width: 100%;
+    padding-top: 7px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+}
+
+.login table{
+    margin: 0 auto;
+    alignment-adjust: auto;
+    background-size: 10% 100%;
+    border-style: outset;
+    border-width: thick;
+/*    background: #fff;     */
+}
+
+.login div{
+    alignment-baseline: use-script;
+}
+
+.login label{
+    alignment-adjust: central;
+    font-size: small;
+    font-weight: bold;
+}
+
+.login .unico{
+    background: #990000;
+}

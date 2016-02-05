@@ -1,0 +1,8 @@
+default:
+  stylesheets:    [main.css]
+
+showSuccess:
+  stylesheets: [tablas3.css]
+  
+indexSuccess:
+  stylesheets: [tablas.css]
